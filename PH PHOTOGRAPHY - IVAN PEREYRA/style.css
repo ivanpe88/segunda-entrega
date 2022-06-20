@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ /*Menu*/
+ .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 0;
+    background-color: #e6621F;
+    gap:30px;
+    list-style: none;
+}
+.menu__1{
+    list-style: none;
+    display: flex;
+}
+
+.menu__sub{
+    text-decoration: none;
+    display: flex; 
+    font-size: 1.8rem;
+    font-family: 'Cagliostro', sans-serif;
+    color: #000000;
+    height: 1.2rem;
+    margin: 0 7rem;
+}
+.menu__sub{
+    padding: -2px 5px;
+    line-height: 15px;
+}
+.menu__sub:hover{
+    background-color: aliceblue;
+}
+
+/*Contenedor*/
+.contenedor{
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 5.5rem;
+    
+    
+}
+
+
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:80px;
+    padding: 10px 10px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -30px;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    position: relative;
+    bottom: -50px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: -70px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 15px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    position: relative;
+    bottom: -55px;
+}
+.pie-pagina .grupo-1 .red-social a :hover{
+    background-color: #efefef;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 12px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
